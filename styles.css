@@ -3,15 +3,45 @@ img[src$="google-plus.svg"] {
 	position: relative;
 	top: .2em;
 	left: -.1em;
+	margin: 0;
 }
 
 nav * {
 	display: inline-block;
-	margin: 10px;
+	margin: .5em;
+}
+
+div[role=main] div.big-icons {
+	margin: 0 auto;
+	display: block;
+	width: 45em;
+}
+
+.big-icons ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .big-icons ul > li {
 	display: inline-block;
+	width: 10em;
+	margin: .5em;
+}
+
+.big-icons ul > li p {
+	font-size: .5em;
+	text-align: center;
+}
+
+.big-icons ul > li h2 {
+	font-size: 1em;
+	text-align: center;
+}
+
+.big-icons ul > li img {
+	margin: 0 auto;
+	display: block;
 }
 
 html * {
@@ -23,13 +53,13 @@ html * {
 }
 
 .images img:not(:first-of-type) {
-	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-left: .5em;
+	margin-top: .5em;
+	margin-bottom: .5em;
 }
 
 .images img:first-of-type {
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-right: .5em;
+	margin-top: .5em;
+	margin-bottom: .5em;
 }
