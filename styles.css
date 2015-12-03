@@ -7,8 +7,29 @@ img[src$="google-plus.svg"] {
 
 nav * {
 	display: inline-block;
+	margin: 10px;
 }
 
 .big-icons ul > li {
 	display: inline-block;
+}
+
+html * {
+	font-family: Arial;
+}
+
+.images img {
+	float: left;
+}
+
+.images img:not(:first-of-type) {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.images img:first-of-type {
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
