@@ -1,6 +1,6 @@
 .container {
-	margin: 5em 10em 0 10em;
-	max-width: 1000px;
+	margin: 0 auto;
+	width: 984px;
 }
 
 img[src$="svg"] {
@@ -14,7 +14,6 @@ img[src$="svg"] {
 
 .navigation {
 	position: fixed;
-	padding: 0 10em;
 	display: block;
 	width: 100%;
 	top: 0;
@@ -69,26 +68,26 @@ nav i:first-of-type {
 
 .title {
 	display: block;
-	width: ;
 	margin: 0 auto;
 }
 
 div[role=main] div.big-icons {
 	margin: 0 auto;
 	display: block;
-	width: 45em;
+	width: 984px;
 }
 
 .big-icons ul {
 	list-style-type: none;
+	width: 984px;
 	margin: 0;
 	padding: 0;
 }
 
 .big-icons ul > li {
 	display: inline-block;
-	width: 10em;
-	margin: .5em;
+	width: 220px;
+	margin: 10px;
 }
 
 .big-icons ul > li p {
@@ -119,15 +118,15 @@ html * {
 }
 
 .images img:not(:first-of-type) {
-	margin-left: .5em;
-	margin-top: .5em;
-	margin-bottom: .5em;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .images img:first-of-type {
-	margin-right: .5em;
-	margin-top: .5em;
-	margin-bottom: .5em;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 hr {
@@ -135,7 +134,40 @@ hr {
 	background-color: #ffffff;
 }
 
-From 723px - 
-@media screen and (max-width:1989px) {
-	
+/* From 723px - 984px: Single Large Image, Side Images Cleared, Width Held at 723px */
+
+@media (min-width:723px) and (max-width:999px) {
+	.container {
+		margin: 0 auto;
+		width: 723px;
+	}
+
+	div[role=main] div.big-icons:first-of-type,
+	div[role=main] div.big-icons:nth-of-type(2) {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+	}
+}
+
+/* > 984px: Hold Container with Floats Same Width, and Expand Margins */
+/* This is the default size */
+
+/* < 723px: Stack Icons + Scale Down Large Image */
+
+@media (max-width:722px) {
+	.container {
+		margin: 0;
+		width: 100%;
+	}
+
+	div[role=main] div.big-icons {
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.images img:first-of-type {
+		width: 100%;
+	}
 }
