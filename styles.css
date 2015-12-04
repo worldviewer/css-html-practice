@@ -7,7 +7,6 @@ img[src$="svg"] {
 	width: 1.2em;
 	position: relative;
 	top: .2em;
-	left: -.1em;
 	margin: 0;
 	color: white;
 }
@@ -48,7 +47,11 @@ nav li {
 	border-top: .2em solid #6d6d6d;
 }
 
-nav li:active {
+nav li:hover {
+	color: #ecd291;
+}
+
+nav li:first-of-type {
 	color: #ecd291;
 }
 
@@ -71,8 +74,19 @@ nav i:first-of-type {
 	line-height: 52px;
 }
 
-.title h1 {
+.title {
 	text-align: center;
+}
+
+.line {
+	display: inline-block;
+	width: 32.2%;
+	border-top: 2px dotted #dadada;
+	background-color: #ffffff;
+}
+
+.title h1 {
+	display: inline-block;
 	font-weight: 100;
 	font-size: 36px;
 }
@@ -162,6 +176,14 @@ hr {
 		width: 4.5em;
 	}
 
+	nav p {
+		line-height: 52px;
+	}
+
+	.line {
+		width: 22%;
+	}
+
 	div[role=main] div.big-icons {
 		margin: 0;
 		display: block;
@@ -205,6 +227,15 @@ hr {
 		display: none;
 	}
 
+	nav p {
+		padding-left: .5em;
+		padding-top: .25em;
+	}
+
+	.line {
+		display: none;
+	}
+
 	.social-icons {
 		position: absolute;
 		right: 0;
@@ -238,6 +269,15 @@ hr {
 	}
 
 	.navigation nav ul li {
+		display: none;
+	}
+
+	nav p {
+		padding-left: .5em;
+		padding-top: .25em;
+	}
+
+	.line {
 		display: none;
 	}
 
