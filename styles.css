@@ -1,5 +1,5 @@
 .container {
-	margin: 0 auto;
+	margin: 90px auto 0px auto;
 	width: 984px;
 }
 
@@ -16,6 +16,7 @@ img[src$="svg"] {
 	position: fixed;
 	display: block;
 	width: 100%;
+	height: 55px;
 	top: 0;
 	left: 0;
 	background-color: black;
@@ -24,7 +25,7 @@ img[src$="svg"] {
 nav {
 	display: block;
 	margin: 0 auto;
-	width: 1000px;
+	width: 984px;
 }
 
 nav ul {
@@ -40,7 +41,7 @@ nav * {
 
 nav li {
 	font-size: .5em;
-	width: 5em;
+	width: 12.5em;
 	padding: 2em 4.5em;
 	text-align: center;
 	color: #6d6d6d;
@@ -66,9 +67,14 @@ nav i:first-of-type {
 	padding-left: 2em;
 }
 
-.title {
-	display: block;
-	margin: 0 auto;
+.social-icons {
+	line-height: 52px;
+}
+
+.title h1 {
+	text-align: center;
+	font-weight: 100;
+	font-size: 36px;
 }
 
 div[role=main] div.big-icons {
@@ -137,14 +143,23 @@ html * {
 hr {
 	border-top: 2px dotted #dadada;
 	background-color: #ffffff;
+	margin: 25px 0;
 }
 
 /* From 723px - 984px: Single Large Image, Side Images Cleared, Width Held at 723px */
 
 @media (min-width:723px) and (max-width:999px) {
 	.container {
-		margin: 0 auto;
+		margin: 90px auto 0 auto;
 		width: 723px;
+	}
+
+	nav {
+		width: 723px;
+	}
+
+	nav li {
+		width: 4.5em;
 	}
 
 	div[role=main] div.big-icons {
@@ -182,8 +197,17 @@ hr {
 
 @media (min-width:516px) and (max-width:722px) {
 	.container {
-		margin: 0;
+		margin: 90px 0 0 0;
 		width: 100%;
+	}
+
+	.navigation nav ul li {
+		display: none;
+	}
+
+	.social-icons {
+		position: absolute;
+		right: 0;
 	}
 
 	div[role=main] div.big-icons {
@@ -209,8 +233,17 @@ hr {
 
 @media (max-width:515px) {
 	.container {
-		margin: 0;
+		margin: 90px 0 0 0;
 		width: 100%;
+	}
+
+	.navigation nav ul li {
+		display: none;
+	}
+
+	.social-icons {
+		position: absolute;
+		right: 0;
 	}
 
 	div[role=main] div.big-icons {
