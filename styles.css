@@ -236,16 +236,12 @@ hr {
 		width: 100%;
 	}
 
-	.navigation nav ul li {
-		display: none;
-	}
-
 	nav p {
 		padding-left: .5em;
 		padding-top: .25em;
 	}
 
-	.line {
+	.line, .circle, .navigation nav ul li {
 		display: none;
 	}
 
@@ -281,16 +277,12 @@ hr {
 		width: 100%;
 	}
 
-	.navigation nav ul li {
-		display: none;
-	}
-
 	nav p {
 		padding-left: .5em;
 		padding-top: .25em;
 	}
 
-	.line {
+	.line, .circle, .navigation nav ul li {
 		display: none;
 	}
 
