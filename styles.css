@@ -1,24 +1,37 @@
-body {
-	margin-top: 0;
+.container {
+	margin: 5em 10em 0 10em;
+	max-width: 1000px;
 }
 
-img[src$="google-plus.svg"] {
+img[src$="svg"] {
 	width: 1.2em;
 	position: relative;
 	top: .2em;
 	left: -.1em;
 	margin: 0;
+	color: white;
+}
+
+.navigation {
+	position: fixed;
+	padding: 0 10em;
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
 }
 
 nav {
-	position: fixed;
-	padding: 0;
 	display: block;
-	width: 100%;
 	margin: 0 auto;
-	background-color: black;
-	top: 0;
-	left: 0;
+	width: 1000px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: .3em 0 0 0;
+	padding: 0;
 }
 
 nav * {
@@ -29,9 +42,10 @@ nav * {
 nav li {
 	font-size: .5em;
 	width: 5em;
-	padding: 2.5em 3em;
+	padding: 2em 4.5em;
 	text-align: center;
 	color: #6d6d6d;
+	border-top: .2em solid #6d6d6d;
 }
 
 nav li:active {
@@ -41,6 +55,22 @@ nav li:active {
 nav p {
 	font-size: .7em;
 	color: white;
+	line-height: 52px;
+	padding-right: 2em;
+}
+
+nav i {
+	color: white;
+}
+
+nav i:first-of-type {
+	padding-left: 2em;
+}
+
+.title {
+	display: block;
+	width: ;
+	margin: 0 auto;
 }
 
 div[role=main] div.big-icons {
@@ -77,6 +107,7 @@ h2 {
 .big-icons ul > li img {
 	margin: 0 auto;
 	display: block;
+	width: 35%;
 }
 
 html * {
@@ -97,4 +128,14 @@ html * {
 	margin-right: .5em;
 	margin-top: .5em;
 	margin-bottom: .5em;
+}
+
+hr {
+	border-top: 2px dotted #dadada;
+	background-color: #ffffff;
+}
+
+From 723px - 
+@media screen and (max-width:1989px) {
+	
 }
