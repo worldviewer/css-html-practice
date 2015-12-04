@@ -1,3 +1,7 @@
+body {
+	background: url('assets/grid.png');
+}
+
 .container {
 	margin: 90px auto 0px auto;
 	width: 984px;
