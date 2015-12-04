@@ -29,22 +29,22 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	margin: .3em 0 0 0;
+	margin: 5px 0 0 0;
 	padding: 0;
 }
 
 nav * {
 	display: inline-block;
-	margin: .2em;
+	margin: 3px;
 }
 
 nav li {
 	font-size: .5em;
-	width: 12.5em;
-	padding: 2em 4.5em;
+	width: 150px;
+	padding: 8px 17px;
 	text-align: center;
 	color: #6d6d6d;
-	border-top: .2em solid #6d6d6d;
+	border-top: 3px solid #6d6d6d;
 }
 
 nav li:hover {
@@ -60,7 +60,7 @@ nav p {
 	font-size: .7em;
 	color: white;
 	line-height: 52px;
-	padding-right: 2em;
+	padding-right: 8px;
 }
 
 nav i {
@@ -68,7 +68,7 @@ nav i {
 }
 
 nav i:first-of-type {
-	padding-left: 2em;
+	padding-left: 8px;
 }
 
 .social-icons {
@@ -186,7 +186,7 @@ hr {
 	}
 
 	nav li {
-		width: 4.5em;
+		width: 83px;
 	}
 
 	nav p {
