@@ -1,6 +1,8 @@
 .container {
 	margin: 90px auto 0px auto;
 	width: 984px;
+
+	transition: all 1s;
 }
 
 img[src$="svg"] {
@@ -16,16 +18,24 @@ img[src$="svg"] {
 	display: block;
 	width: 100%;
 	height: 55px;
-	top: 0;
+	top: 0px;
 	left: 0;
 	background-color: black;
+
+	animation: navslidein 1s ease;
 
 /*	This fixes the "css z-index lost after webkit transform translate3d" 
 	bug by applying the transform to the element without actually doing 
 	a transformation, thus affecting its render order so it is above the 
-	element causing the issue. */
+	element causing the issue ... Was necessary before I was animating,
+	but not now ... */
 	z-index: 1000;
-	-webkit-transform: translate3d(0,0,0);	
+	/*-webkit-transform: translate3d(0,0,0);	*/
+}
+
+@keyframes navslidein {
+	from { top: -55px; }
+	to { top: 0px; }
 }
 
 nav {
@@ -94,6 +104,15 @@ nav i:first-of-type {
 	border-top: 2px dotted #dadada;
 	background-color: #ffffff;
 	z-index: -1;
+
+	animation: lineexpand 2s ease;
+}
+
+@keyframes lineexpand {
+	0% { width: 0; opacity: 0; }
+	50% { width: 0; opacity: 0; }
+	60% { opacity: 1; }
+	100% { width: 30%; }
 }
 
 .circle {
@@ -103,12 +122,23 @@ nav i:first-of-type {
 	height: 10px;
 	margin-bottom: 8px;
 	border-radius: 5px;
+
+	animation: growcircle 1s ease;
+}
+
+@keyframes growcircle {
+	from { width: 0; height: 0; }
+	to { width: 10px; height: 10px; }
 }
 
 .title h1 {
 	display: inline-block;
 	font-weight: 100;
 	font-size: 36px;
+}
+
+div[role=main] {
+	perspective: 1000px;
 }
 
 div[role=main] div.big-icons {
@@ -133,6 +163,13 @@ div[role=main] div.big-icons {
 .big-icons ul > li p {
 	font-size: .5em;
 	text-align: center;
+
+	animation: fadetextin 1.5s ease-in;
+}
+
+@keyframes fadetextin {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 h2 {
@@ -148,11 +185,16 @@ h2 {
 	display: block;
 	width: 35%;
 
+	/* For rotation animation */
 	transition: transform 1s;
+
+	animation: growicons 1s ease;
 }
 
-.big-icons {
-	perspective: 1000px;
+@keyframes growicons {
+	0% { transform: scale(0); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(1); }
 }
 
 .big-icons ul > li img:hover {
