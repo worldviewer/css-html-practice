@@ -96,6 +96,15 @@ nav i:first-of-type {
 	text-align: center;
 }
 
+.title h1 {
+	animation: titleexpand 1s;
+}
+
+@keyframes titleexpand {
+	from { transform: rotateX(0deg); }
+	to { transform: rotateX(360deg); }
+}
+
 .line {
 	display: inline-block;
 	position: relative;
@@ -255,6 +264,14 @@ hr {
 
 	.line {
 		width: 22%;
+		animation: lineexpandsmall 2s ease;
+	}
+
+	@keyframes lineexpandsmall {
+		0% { width: 0; opacity: 0; }
+		50% { width: 0; opacity: 0; }
+		60% { opacity: 1; }
+		100% { width: 22%; }
 	}
 
 	div[role=main] div.big-icons {
