@@ -19,6 +19,13 @@ img[src$="svg"] {
 	top: 0;
 	left: 0;
 	background-color: black;
+
+/*	This fixes the "css z-index lost after webkit transform translate3d" 
+	bug by applying the transform to the element without actually doing 
+	a transformation, thus affecting its render order so it is above the 
+	element causing the issue. */
+	z-index: 1000;
+	-webkit-transform: translate3d(0,0,0);	
 }
 
 nav {
@@ -140,6 +147,17 @@ h2 {
 	margin: 0 auto;
 	display: block;
 	width: 35%;
+
+	transition: transform 1s;
+}
+
+.big-icons {
+	perspective: 1000px;
+}
+
+.big-icons ul > li img:hover {
+	transform: rotateY(360deg);
+	transform-origin: 50% 50%;
 }
 
 html * {
