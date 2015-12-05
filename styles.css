@@ -228,6 +228,11 @@ h2 {
 	transform: rotateY(360deg);
 }
 
+.big-icons ul > li img:hover + h2,
+.big-icons ul > li h2:hover {
+	color: #ecd291;
+}
+
 html * {
 	font-family: Arial;
 }
