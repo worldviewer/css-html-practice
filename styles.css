@@ -22,7 +22,7 @@ img[src$="svg"] {
 	left: 0;
 	background-color: black;
 
-	animation: navslidein 1s ease;
+	animation: navSlideIn 1s ease;
 
 /*	This fixes the "css z-index lost after webkit transform translate3d" 
 	bug by applying the transform to the element without actually doing 
@@ -33,7 +33,7 @@ img[src$="svg"] {
 	/*-webkit-transform: translate3d(0,0,0);	*/
 }
 
-@keyframes navslidein {
+@keyframes navSlideIn {
 	from { top: -55px; }
 	to { top: 0px; }
 }
@@ -68,6 +68,23 @@ nav li:hover {
 	color: #ecd291;
 }
 
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 nav li:first-of-type {
 	color: #ecd291;
 	border-top: #ecd291 3px solid;
@@ -82,6 +99,8 @@ nav p {
 
 nav p:hover {
 	color: #ecd291;
+
+	animation: pulse .5s;
 }
 
 nav i {
@@ -104,10 +123,14 @@ nav i:first-of-type {
 
 .social-icons i:hover {
 	color: #ecd291;
+
+	animation: pulse .5s;
 }
 
 .social-icons svg:hover path {
 	fill: #ecd291;
+
+	animation: pulse .5s;
 }
 
 .title {
@@ -115,10 +138,10 @@ nav i:first-of-type {
 }
 
 .title h1 {
-	animation: titleexpand 1s;
+	animation: titleExpand 1s;
 }
 
-@keyframes titleexpand {
+@keyframes titleExpand {
 	from { transform: rotateX(0deg); }
 	to { transform: rotateX(360deg); }
 }
@@ -132,10 +155,10 @@ nav i:first-of-type {
 	background-color: #ffffff;
 	z-index: -1;
 
-	animation: lineexpand 2s ease;
+	animation: lineExpand 2s ease;
 }
 
-@keyframes lineexpand {
+@keyframes lineExpand {
 	0% { width: 0; opacity: 0; }
 	50% { width: 0; opacity: 0; }
 	60% { opacity: 1; }
@@ -150,10 +173,10 @@ nav i:first-of-type {
 	margin-bottom: 8px;
 	border-radius: 5px;
 
-	animation: growcircle 1s ease;
+	animation: growCircle 1s ease;
 }
 
-@keyframes growcircle {
+@keyframes growCircle {
 	from { width: 0; height: 0; }
 	to { width: 10px; height: 10px; }
 }
@@ -191,10 +214,10 @@ div[role=main] div.big-icons {
 	font-size: .5em;
 	text-align: center;
 
-	animation: fadetextin 1.5s ease-in;
+	animation: fadeTextIn 1.5s ease-in;
 }
 
-@keyframes fadetextin {
+@keyframes fadeTextIn {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
@@ -215,10 +238,10 @@ h2 {
 	/* For rotation animation */
 	transition: transform 1s;
 
-	animation: growicons 1s ease;
+	animation: growIcons 1s ease;
 }
 
-@keyframes growicons {
+@keyframes growIcons {
 	0% { transform: scale(0); }
 	50% { transform: scale(1.25); }
 	100% { transform: scale(1); }
@@ -231,6 +254,7 @@ h2 {
 .big-icons ul > li img:hover + h2,
 .big-icons ul > li h2:hover {
 	color: #ecd291;
+	animation: pulse .5s;
 }
 
 html * {
@@ -241,16 +265,86 @@ html * {
 	float: left;
 }
 
+/* Not able to css-animate floats ... ? */
+/*.images img:hover {
+	animation: pulse .5s;
+}
+*/
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Modified to add in some delay ... */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+  }
+
+  40% {
+  	opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 .images img:not(:first-of-type) {
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+
+	animation: fadeInRight 1s;
 }
 
 .images img:first-of-type {
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+
+	animation: fadeInLeft 1s;
 }
 
 .images img:last-of-type {
@@ -262,6 +356,8 @@ hr {
 	border-top: 2px dotted #dadada;
 	background-color: #ffffff;
 	margin: 25px 0;
+
+	animation: zoomIn 2s;
 }
 
 /* From 723px - 984px: Single Large Image, Side Images Cleared, Width Held at 723px */
@@ -286,10 +382,10 @@ hr {
 
 	.line {
 		width: 22%;
-		animation: lineexpandsmall 2s ease;
+		animation: lineExpandSmall 2s ease;
 	}
 
-	@keyframes lineexpandsmall {
+	@keyframes lineExpandSmall {
 		0% { width: 0; opacity: 0; }
 		50% { width: 0; opacity: 0; }
 		60% { opacity: 1; }
@@ -314,6 +410,8 @@ hr {
 		padding: 10px 0 10px 0;
 		margin: 0;
 		float: left;
+
+		animation: fadeInLeft 1s;
 	}
 
 	div[role="main"] .images img:nth-of-type(3) {
@@ -321,6 +419,8 @@ hr {
 		padding: 10px 0 10px 0;
 		margin: 0;
 		float: right;
+
+		animation: fadeInRight 1s;
 	}
 }
 
@@ -361,6 +461,8 @@ hr {
 		height: 100%;
 		padding: 10px 0;
 		margin: 0;
+
+		animation: fadeInUp 1s;
 	}
 
 	.big-icons ul {
@@ -402,6 +504,8 @@ hr {
 		height: 100%;
 		padding: 10px 0;
 		margin: 0;
+
+		animation: fadeInUp 1s;
 	}
 
 	.big-icons ul {
