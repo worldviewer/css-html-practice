@@ -80,6 +80,10 @@ nav p {
 	padding-right: 8px;
 }
 
+nav p:hover {
+	color: #ecd291;
+}
+
 nav i {
 	color: white;
 }
@@ -90,6 +94,20 @@ nav i:first-of-type {
 
 .social-icons {
 	line-height: 52px;
+}
+
+.social-icons svg {
+	position: relative;
+	top: 6px;
+	left: -2px;
+}
+
+.social-icons i:hover {
+	color: #ecd291;
+}
+
+.social-icons svg:hover path {
+	fill: #ecd291;
 }
 
 .title {
@@ -208,7 +226,6 @@ h2 {
 
 .big-icons ul > li img:hover {
 	transform: rotateY(360deg);
-	transform-origin: 50% 50%;
 }
 
 html * {
