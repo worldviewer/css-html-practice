@@ -368,6 +368,34 @@ hr {
 	animation: zoomIn 2s;
 }
 
+#modal {
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+
+	background-color: rgba(0, 0, 0, .4);
+}
+
+#modal div img {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#modal div img[src$="matches.jpg"] {
+	width: 30%;
+}
+
 /* From 723px - 984px: Single Large Image, Side Images Cleared, Width Held at 723px */
 
 @media (min-width:723px) and (max-width:999px) {
@@ -430,6 +458,21 @@ hr {
 
 		animation: fadeInRight 1s;
 	}
+
+	#modal div img {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#modal div img[src$="matches.jpg"] {
+		width: 40%;
+	}	
 }
 
 /* > 984px: Hold Container with Floats Same Width, and Expand Margins */
@@ -478,6 +521,21 @@ hr {
 		margin: 0;
 		padding: 0;
 	}
+
+	#modal div img {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#modal div img[src$="matches.jpg"] {
+		width: 50%;
+	}	
 }
 
 @media (max-width:515px) {
@@ -521,4 +579,19 @@ hr {
 		margin: 0;
 		padding: 0;
 	}
+
+	#modal div img {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#modal div img[src$="matches.jpg"] {
+		width: 70%;
+	}	
 }
