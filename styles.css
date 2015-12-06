@@ -251,12 +251,15 @@ h2 {
 	100% { transform: scale(1); }
 }
 
+/* Cannot make big icon spin on h2 hover, because there is no
+css parent selector ... This would have to happen in jQuery ... */
+
 .big-icons ul > li img:hover {
 	transform: rotateY(360deg);
 }
 
 .big-icons ul > li img:hover + h2,
-.big-icons ul > li h2:hover {
+.big-icons ul > li img + h2:hover {
 	color: #ecd291;
 	animation: pulse .5s;
 }
