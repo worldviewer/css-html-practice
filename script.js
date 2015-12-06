@@ -6,13 +6,15 @@ $(document).ready(function() {
 		$('body').css('overflow', 'hidden');
 	}
 
-	$('.images img').on('click', function(e) {
+	$('.images img').on('click', function() {
 		showImage(this);
 	});
 
-	$('#modal').on('click', function(e) {
-		$('#modal').css('visibility', 'hidden');
-		$('#modal img').remove();
-		$('body').css('overflow', 'auto');
+	$('#modal').on('click', function(event) {
+		if(!$(event.target).is('img')) {
+			$('#modal').css('visibility', 'hidden');
+			$('#modal img').remove();
+			$('body').css('overflow', 'auto');
+		}
 	});
 });
