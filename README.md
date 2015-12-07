@@ -84,14 +84,19 @@ Vender prefixes were intentionally left out of many of the CSS3 features to obse
 
 ### IE 5 - 2001
 - without -ms-
+- Interesting "circles" ...
 
 <p align="center">
   <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-1.jpg" />
 </p>
 
+- Navbar is a mess ...
+
 <p align="center">
   <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-2.jpg" />
 </p>
+
+- Media queries don't work ...
 
 <p align="center">
   <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-3.jpg" />
@@ -100,25 +105,25 @@ Vender prefixes were intentionally left out of many of the CSS3 features to obse
 ### IOS Safari 7.1.2 - 0.41%
 
 <p align="center">
-  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/default-page-view.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/default-page-view.png" />
 </p>
 
 - Artifacts on the menus ...
 
 <p align="center">
-  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/menu-artifact.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/menu-artifact.png" />
 </p>
 
 - None of the hover animations work
 
 <p align="center">
-  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-animations-work.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-animations-work.png" />
 </p>
 
 - None of the page load animations work either (at least without vender-specific extensions)
 
 <p align="center">
-  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-page-load-animations-work.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-page-load-animations-work.png" />
 </p>
 
 ### Safari 5.1.10 - 2013 - 0.16%
