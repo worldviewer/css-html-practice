@@ -5,13 +5,13 @@ Note: css-animations branch is final version.
 Code the UI in semantic HTML and CSS. You can use something like http://www.lipsum.com/ (or any of the many variations of ipsum text out there) to fill in the copy. 
 
 <p align="center">
-  <img src="https://github.com/worldviewer/web-site-template.png" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/web-site-template.png" />
 </p>
 
 Using jQuery, make it so a modal will open up with the image displayed larger and in the center of the screen. The area around the large image should have a semi-transparent dark background (see web-site-template_modal.jpg)
 
 <p align="center">
-  <img src="https://github.com/worldviewer/web-site-template_modal.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/web-site-template_modal.jpg" />
 </p>
 
 ## Bonus
@@ -86,39 +86,39 @@ Vender prefixes were intentionally left out of many of the CSS3 features to obse
 - without -ms-
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/ie5-1.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-1.jpg" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/ie5-2.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-2.jpg" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/ie5-3.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/ie5-3.jpg" />
 </p>
 
 ### IOS Safari 7.1.2 - 0.41%
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/default-page-view.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/default-page-view.jpg" />
 </p>
 
 - Artifacts on the menus ...
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/menu-artifact.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/menu-artifact.jpg" />
 </p>
 
 - None of the hover animations work
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/none-of-the-animations-work.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-animations-work.jpg" />
 </p>
 
 - None of the page load animations work either (at least without vender-specific extensions)
 
 <p align="center">
-  <img src="https://github.com/worldviewer/browser-testing/none-of-the-page-load-animations-work.jpg" />
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-page-load-animations-work.jpg" />
 </p>
 
 ### Safari 5.1.10 - 2013 - 0.16%
