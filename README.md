@@ -1,5 +1,3 @@
-Note: css-animations branch is final version.
-
 # The Exercise
 
 Code the UI in semantic HTML and CSS. You can use something like http://www.lipsum.com/ (or any of the many variations of ipsum text out there) to fill in the copy. 
@@ -42,6 +40,8 @@ Using jQuery, make it so a modal will open up with the image displayed larger an
   <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/one-does-not-simply.jpg" />
 </p>
 
+- Use fill rather than color to paint SVG's, but appears to require that SVG is not included as img element
+
 - CSS selector for the G+ SVG was tricky since the g and the plus are separate SVG path elements which must fire together ...
 
 > .social-icons svg:hover path {}
@@ -59,8 +59,6 @@ I was expecting that I'd be able to get this to work with ...
 But, jQuery does not appear to understand this.
 
 - Tracking down and installing a copy of IE 5 was more difficult than I expected.  Installation would not work on a modern Macbook.  I had to install it on a much older Mac.  I tried fiddling with WineBottler to run more recent versions of Windows-only IE (6, 7 and 8) on a Modern Mac, but this crashed.
-
-- Use fill rather than color to paint SVG's
 
 - Found that I could reduce code size by bringing in select CSS animations from animate.css, rather than including the entire library
 
