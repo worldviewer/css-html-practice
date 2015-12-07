@@ -26,7 +26,7 @@ Using jQuery, make it so a modal will open up with the image displayed larger an
 
 - Ran into difficulties running a CSS animation on floated images
 
-- CSS animations on page can alter the stacking order of navbars that have no CSS animations assigned.  This is apparently a known bug and has an easy fix to simply apply
+- CSS animations on page can alter the stacking order of navbars that have no 3d CSS animations assigned.  This is apparently a known bug and has an easy fix to simply apply ...
 
 > transform: translate3d(0,0,0);
 
@@ -34,7 +34,13 @@ Using jQuery, make it so a modal will open up with the image displayed larger an
 
 > $('#modal div').append($(img).clone());
 
-- For some reason, this particular style of g+ icon is tricky to find in glyph form.
+- For some reason, this particular style of g+ icon is tricky to find in glyph form.  Found it in SVG.
+
+- Discovered that ...
+
+<p align="center">
+  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/one-does-not-simply.jpg" />
+</p>
 
 - CSS selector for the G+ SVG was tricky since the g and the plus are separate SVG path elements which must fire together ...
 
