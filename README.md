@@ -115,11 +115,6 @@ Vender prefixes were intentionally left out of many of the CSS3 features to obse
 </p>
 
 - None of the hover animations work
-
-<p align="center">
-  <img src="https://github.com/worldviewer/css-html-practice/blob/css-animations/browser-testing/none-of-the-page-load-animations-work.png" />
-</p>
-
 - None of the page load animations work either (at least without vender-specific extensions)
 
 <p align="center">
